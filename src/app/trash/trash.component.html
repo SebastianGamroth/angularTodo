@@ -1,9 +1,8 @@
 <div *ngFor="let trash of service.allNote[1]; let i = index">
-    <!-- {{trash}}
-    {{service.trashNotes[i]}} -->
 
     {{service.allNote[1][i]['title']}}
     {{service.allNote[1][i]['note']}}
-
+    <button (click)="toArchiv(i)">to Archiv</button>
+    <button (click)="deleteNote(i)">Delete</button>
 
 </div>

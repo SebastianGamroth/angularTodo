@@ -12,4 +12,19 @@ export class TrashComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  toArchiv(i: number) {
+
+    this.service.allNote[2].push(this.service.allNote[1][i]);
+    this.service.allNote[1].splice(i, 1);
+
+  }
+
+
+  deleteNote(i: number) {
+
+    this.service.allNote[1].splice(i, 1);
+
+  }
+
 }

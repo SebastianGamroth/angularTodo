@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InputArrayService } from '../input-array.service';
 
 @Component({
   selector: 'app-archiv',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArchivComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: InputArrayService) { }
 
   ngOnInit(): void {
+  }
+
+  deleteNote(i: number) {
+
+    this.service.allNote[2].splice(i, 1);
+
   }
 
 }

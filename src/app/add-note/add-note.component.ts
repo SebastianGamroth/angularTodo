@@ -14,8 +14,8 @@ export class AddNoteComponent implements OnInit {
   constructor(public service: InputArrayService) { }
 
   ngOnInit(): void {
-
   }
+
 
   addPost() {
     this.toJson = {
@@ -25,22 +25,23 @@ export class AddNoteComponent implements OnInit {
 
     this.service.allNote[0].push(this.toJson);
 
-    // this.service.allTitles.push(this.title);
-    // this.service.allNotes.push(this.note);
     this.title = '';
     this.note = '';
   }
 
-  deleteNote(i: number) {
+
+  toTrash(i: number) {
 
     this.service.allNote[1].push(this.service.allNote[0][i]);
     this.service.allNote[0].splice(i, 1);
 
-    // this.service.trashTitles.push(this.service.allTitles[i]);
-    // this.service.trashNotes.push(this.service.allNotes[i]);
-    // this.service.allTitles.splice(i, 1);
-    // this.service.allNotes.splice(i, 1);
-    // console.log(this.service.trashTitles)
   }
 
+
+  toArchiv(i: number) {
+
+    this.service.allNote[2].push(this.service.allNote[0][i]);
+    this.service.allNote[0].splice(i, 1);
+
+  }
 }

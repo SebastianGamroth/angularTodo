@@ -12,16 +12,11 @@
     <button mat-raised-button color="primary" (click)="addPost()">Posten</button>
 </div>
 
-<!-- <div class="showNotes" *ngFor="let titles of service.allTitles; let i = index"> -->
 <div class="showNotes" *ngFor="let titles of service.allNote[0]; let i = index">
-
-    <!-- <div>{{titles}}
-        {{service.allNotes[i]}}
-        <button (click)="deleteNote(i)">Delete</button>
-    </div> -->
 
     <div>{{service.allNote[0][i]['title']}}
         {{service.allNote[0][i]['note']}}
-        <button (click)="deleteNote(i)">Delete</button>
+        <button (click)="toTrash(i)">to Trash</button>
+        <button (click)="toArchiv(i)">to Archiv</button>
     </div>
 </div>

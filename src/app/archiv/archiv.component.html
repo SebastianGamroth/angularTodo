@@ -1,1 +1,8 @@
-<p>archiv works!</p>
+<div *ngFor="let trash of service.allNote[2]; let i = index">
+
+    {{service.allNote[2][i]['title']}}
+    {{service.allNote[2][i]['note']}}
+    <button (click)="deleteNote(i)">Delete</button>
+        
+</div>
+
