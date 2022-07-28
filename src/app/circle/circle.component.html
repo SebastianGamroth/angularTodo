@@ -1,0 +1,10 @@
+<div class="circle" *ngFor="let card of box; let i=index">
+
+    <div [ngStyle]="{'left.px': yValues[i], 'top.px': xValues[i]}" class="card">{{i}}</div>
+
+
+    <div class="info" [ngStyle]="{'top.px': i*20}">
+        {{i}}-top-{{xValues[i]}}....
+        {{i}}-left-{{yValues[i]}}
+    </div>
+</div>

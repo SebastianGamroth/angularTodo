@@ -13,6 +13,7 @@ import { ArchivComponent } from './archiv/archiv.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms'
 import {MatCardModule} from '@angular/material/card';
+import { CircleComponent } from './circle/circle.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatCardModule} from '@angular/material/card';
     HeaderComponent,
     AddNoteComponent,
     TrashComponent,
-    ArchivComponent
+    ArchivComponent,
+    CircleComponent
   ],
   imports: [
     BrowserModule,

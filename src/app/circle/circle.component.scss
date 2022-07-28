@@ -1,0 +1,22 @@
+.circle {
+    position: relative;
+    top: 0px;
+    left: 250px;
+}
+
+.card {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 20px;
+    height: 40px;
+}
+
+.info{
+    position: absolute;
+    top: 50px;
+    left: -120px;
+}
