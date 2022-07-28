@@ -1,0 +1,27 @@
+<div class="column">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Title</mat-label>
+        <textarea matInput placeholder="Title" [(ngModel)]="title"></textarea>
+
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Note</mat-label>
+        <textarea matInput placeholder="Note" [(ngModel)]="note"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addPost()">Posten</button>
+</div>
+
+<!-- <div class="showNotes" *ngFor="let titles of service.allTitles; let i = index"> -->
+<div class="showNotes" *ngFor="let titles of service.allNote[0]; let i = index">
+
+    <!-- <div>{{titles}}
+        {{service.allNotes[i]}}
+        <button (click)="deleteNote(i)">Delete</button>
+    </div> -->
+
+    <div>{{service.allNote[0][i]['title']}}
+        {{service.allNote[0][i]['note']}}
+        <button (click)="deleteNote(i)">Delete</button>
+    </div>
+</div>
