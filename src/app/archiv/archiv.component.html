@@ -1,8 +1,8 @@
-<div *ngFor="let trash of service.allNote[2]; let i = index">
-
-    {{service.allNote[2][i]['title']}}
-    {{service.allNote[2][i]['note']}}
-    <button (click)="deleteNote(i)">Delete</button>
-        
-</div>
+<mat-card class="showNotes" *ngFor="let titles of service.allNote[2]; let i = index">
+    <mat-card-title>{{service.allNote[2][i]['title']}}</mat-card-title>
+    <mat-card-subtitle>{{service.allNote[2][i]['note']}}</mat-card-subtitle>
+    <mat-card-actions align="end">
+        <button (click)="deleteNote(i)" mat-button>Delete</button>
+    </mat-card-actions>
+</mat-card>
 

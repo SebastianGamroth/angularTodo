@@ -12,6 +12,8 @@ import { TrashComponent } from './trash/trash.component';
 import { ArchivComponent } from './archiv/archiv.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms'
+import {MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { FormsModule } from '@angular/forms'
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
