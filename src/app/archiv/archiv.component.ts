@@ -15,7 +15,7 @@ export class ArchivComponent implements OnInit {
 
   deleteNote(i: number) {
 
-    this.service.allNote[2].splice(i, 1);
+    this.service.allNote[0].archiv.splice(i, 1);
 
   }
 

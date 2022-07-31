@@ -13,9 +13,9 @@
 </div>
 
 
-<mat-card class="showNotes" *ngFor="let titles of service.allNote[0]; let i = index">
-    <mat-card-title>{{service.allNote[0][i]['title']}}</mat-card-title>
-    <mat-card-subtitle>{{service.allNote[0][i]['note']}}</mat-card-subtitle>
+<mat-card class="showNotes" *ngFor="let titles of service.allNote[0]['addNote']; let i = index">
+    <mat-card-title>{{service.allNote[0]['addNote'][i]['title']}}</mat-card-title>
+    <mat-card-subtitle>{{service.allNote[0]['addNote'][i]['note']}}</mat-card-subtitle>
     <mat-card-actions align="end">
         <button (click)="toTrash(i)" mat-button>to Trash</button>
         <button (click)="toArchiv(i)" mat-button>to Archiv</button>

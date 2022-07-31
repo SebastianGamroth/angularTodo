@@ -15,15 +15,15 @@ export class TrashComponent implements OnInit {
 
   toArchiv(i: number) {
 
-    this.service.allNote[2].push(this.service.allNote[1][i]);
-    this.service.allNote[1].splice(i, 1);
+    this.service.allNote[0].archiv.push(this.service.allNote[0].trash[i]);
+    this.service.allNote[0].trash.splice(i, 1);
 
   }
 
 
   deleteNote(i: number) {
 
-    this.service.allNote[1].splice(i, 1);
+    this.service.allNote[0].trash.splice(i, 1);
 
   }
 

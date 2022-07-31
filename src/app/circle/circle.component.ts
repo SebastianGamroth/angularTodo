@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class CircleComponent implements OnInit {
 
   constructor() { }
-
+  box: any = [1,2,3,4,5,6,7,8,9,10];
   radius: number = 90;
-  steps: number = 10;
+  steps: number = this.box.length;
   centerX: number = 110;
   centerY: number = 140;
-  box: any = [1,2,3,4,5,6,7,8,9,10];
+
   xValues: any = [];
   yValues: any = [];
 

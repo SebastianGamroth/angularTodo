@@ -5,7 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class InputArrayService {
 
-  public allNote: any[] = [[], [], []];
+  // public allNote: any[] = [[], [], []];
+
+  public allNote: any[] = [
+    {
+      'addNote': [],
+      'archiv': [],
+      'trash': []
+    }
+  ];
 
   constructor() { }
 }
